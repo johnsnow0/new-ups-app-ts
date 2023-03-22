@@ -1,12 +1,19 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import CustomersScreen from './screens/CustomersScreen';
+import { NavigationContainer } from '@react-navigation/native';
+import RootNavigator from './navigator/RootNavigator';
+import { TailwindProvider } from 'tailwind-rn';
+import utilities from './tailwind.json';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    //@ts-ignore
+    <TailwindProvider utilities={utilities}>
+      <NavigationContainer>
+        <RootNavigator />
+      </NavigationContainer>
+    </TailwindProvider>
   );
 }
 
