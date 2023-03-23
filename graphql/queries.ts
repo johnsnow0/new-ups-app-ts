@@ -1,15 +1,17 @@
-import { gql, useQuery } from '@apollo/client';
+import { gql } from "@apollo/client";
 
 export const GET_CUSTOMERS = gql`
-  query getCustomers   {
+
+query getCustomers   {
     getCustomers {
-value {
-    email
-    name
-}
-name
-  }
-`;
+      value {
+        email
+        name
+      }
+  name
+      }
+    }
+    `;
 
 export const GET_ORDERS = gql`
     

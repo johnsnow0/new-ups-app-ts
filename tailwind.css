@@ -1,3 +1,11 @@
+.mb-5 {
+  margin-bottom: 1.25rem
+}
+
+.ml-auto {
+  margin-left: auto
+}
+
 .flex {
   display: flex
 }
@@ -10,9 +18,37 @@
   width: 100%
 }
 
+.flex-row {
+  flex-direction: row
+}
+
+.items-center {
+  align-items: center
+}
+
+.justify-end {
+  justify-content: flex-end
+}
+
+.justify-between {
+  justify-content: space-between
+}
+
+.rounded {
+  border-radius: 0.25rem
+}
+
+.rounded-lg {
+  border-radius: 0.5rem
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity))
+}
+
+.p-5 {
+  padding: 1.25rem
 }
 
 .px-10 {
@@ -26,4 +62,24 @@
 
 .pb-0 {
   padding-bottom: 0px
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem
+}
+
+.text-green-400 {
+  --tw-text-opacity: 1;
+  color: rgb(74 222 128 / var(--tw-text-opacity))
+}
+
+.text-blue-400 {
+  --tw-text-opacity: 1;
+  color: rgb(96 165 250 / var(--tw-text-opacity))
 }
